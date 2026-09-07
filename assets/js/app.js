@@ -32,12 +32,32 @@ async function renderNews(sel,limit){
   b.innerHTML=(limit?ns.slice(0,limit):ns).map(n=>`<div class="news"><div class="d">${n.date} · ${n.tag}</div>
    <h4>${n.title}</h4><p>${n.body}</p></div>`).join('');
 }
-async function renderMembers(cur,alu){
+
+function initials(name){
+  const kr=(name.match(/[가-힣]+/)||[])[0];
+  if(kr) return kr.length>2?kr.slice(1):kr;           // 성 제외한 이름
+  const parts=name.replace(/\(.*?\)/g,'').trim().split(/\s+/);
+  return (parts[0][0]+(parts[1]?parts[1][0]:'')).toUpperCase();
+}
+function avatar(x,size){
+  const s=size||88;
+  if(x.photo) return `<img class="avatar" src="${x.photo}" alt="${x.name}" width="${s}" height="${s}" loading="lazy">`;
+  return `<span class="avatar ph" style="width:${s}px;height:${s}px;font-size:${Math.round(s*0.34)}px">${initials(x.name)}</span>`;
+}
+
+async function renderMembers(cur,alu,place){
   const m=await J('data/members.json');
-  if($(cur))$(cur).innerHTML=m.current.map(x=>`<div class="card"><span class="pill">${x.tag}</span>
-   <h3>${x.name}</h3><p><b>${x.role}</b><br>${x.topic}</p></div>`).join('');
-  if($(alu))$(alu).innerHTML=`<table><thead><tr><th>이름</th><th>구분</th><th>연구주제</th></tr></thead><tbody>`+
-   m.alumni.map(x=>`<tr><td>${x.name}</td><td>${x.role}</td><td>${x.topic}</td></tr>`).join('')+`</tbody></table>`;
+  if($(cur))$(cur).innerHTML=m.current.map(x=>`<div class="card pcard"><span class="pill">${x.tag}</span>
+   <div class="phead">${avatar(x,96)}<div class="pmeta"><h3>${x.name}</h3><b>${x.role}</b></div></div>
+   <p>${x.topic}</p></div>`).join('');
+  if($(alu))$(alu).innerHTML=m.alumni.map(x=>`<div class="card pcard alum">
+   <div class="phead">${avatar(x,76)}<div class="pmeta"><h3>${x.name}</h3><b>${x.role}</b></div></div>
+   <p>${x.topic}</p>${x.now?`<p class="now">현재 <b>${x.now}</b>${x.nowEn?` <span class="bi">${x.nowEn}</span>`:''}</p>`:''}</div>`).join('');
+  if($(place)&&m.placements&&m.placements.length){
+    $(place).innerHTML=m.placements.map(c=>`<div class="plc">
+      ${c.logo?`<img src="${c.logo}" alt="${c.name}" loading="lazy">`:`<span class="plc-txt">${c.name}</span>`}
+      <span class="plc-nm">${c.logo?c.name+(c.nameEn?' · '+c.nameEn:''):(c.nameEn||'')}</span></div>`).join('');
+  }
 }
 async function renderAch(){
   const a=await J('data/achievements.json');
@@ -55,4 +75,40 @@ async function renderProjects(sel){
    <p style="margin-top:10px;color:var(--ink)"><b>연구목표.</b> ${p.goal}</p>
    <ul style="color:var(--muted);font-size:13px;margin:8px 0 0;padding-left:18px">${p.content.map(c=>`<li>${c}</li>`).join('')}</ul>
   </div>`).join('');
+}
+
+/* ---------------- Gallery ---------------- */
+let GAL=[], GIDX=0;
+async function renderGallery(sel){
+  const albums=await J('data/gallery.json'); const b=$(sel); if(!b)return;
+  GAL=[]; albums.forEach(a=>a.items.forEach(it=>GAL.push({src:it.src,cap:a.title})));
+  let k=0;
+  b.innerHTML=albums.map(a=>{
+    const cells=a.items.map(it=>{
+      const i=k++;
+      return `<button class="gcell" data-i="${i}" aria-label="${a.title}">
+        <img src="${it.thumb}" alt="${a.title}" loading="lazy"></button>`;}).join('');
+    return `<section class="galbum"><h3>${a.title} <span class="gn">${a.items.length}</span></h3>
+      <div class="ggrid">${cells}</div></section>`;}).join('');
+  b.addEventListener('click',e=>{const c=e.target.closest('.gcell'); if(c) openLB(+c.dataset.i);});
+  const lb=$('#lb');
+  if(lb){
+    lb.querySelector('.lb-x').onclick=()=>{lb.hidden=true;document.body.style.overflow='';};
+    lb.querySelector('.lb-p').onclick=e=>{e.stopPropagation();openLB(GIDX-1);};
+    lb.querySelector('.lb-n').onclick=e=>{e.stopPropagation();openLB(GIDX+1);};
+    lb.addEventListener('click',e=>{if(e.target===lb){lb.hidden=true;document.body.style.overflow='';}});
+    document.addEventListener('keydown',e=>{
+      if(lb.hidden)return;
+      if(e.key==='Escape'){lb.hidden=true;document.body.style.overflow='';}
+      if(e.key==='ArrowLeft')openLB(GIDX-1);
+      if(e.key==='ArrowRight')openLB(GIDX+1);});
+  }
+}
+function openLB(i){
+  if(!GAL.length)return;
+  GIDX=(i+GAL.length)%GAL.length;
+  const lb=$('#lb'); if(!lb)return;
+  $('#lbimg').src=GAL[GIDX].src;
+  $('#lbcap').textContent=`${GAL[GIDX].cap}  ·  ${GIDX+1} / ${GAL.length}`;
+  lb.hidden=false; document.body.style.overflow='hidden';
 }
