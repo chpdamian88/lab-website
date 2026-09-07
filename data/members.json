@@ -73,17 +73,17 @@
   {
    "name": "㈜한화제약",
    "nameEn": "Hanwha Pharma Co., Ltd.",
-   "logo": ""
+   "logo": "images/logos/hanwha.png"
   },
   {
    "name": "㈜대원제약",
    "nameEn": "Daewon Pharmaceutical Co., Ltd.",
-   "logo": ""
+   "logo": "images/logos/daewon.png"
   },
   {
    "name": "㈜아이엠디팜",
    "nameEn": "IMD Pharm Co., Ltd.",
-   "logo": ""
+   "logo": "images/logos/imdpharm.png"
   }
  ]
 }
