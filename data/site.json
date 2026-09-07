@@ -1,7 +1,7 @@
 {
  "lab": {
-  "name_en": "Bioavailability Control Laboratory (BACL)",
-  "name_ko": "생체이용률조절연구실",
+  "name_en": "Patient-Centered Bioavailability Control Laboratory (PC-BACL)",
+  "name_ko": "환자중심형 생체이용률조절연구실",
   "org_en": "Jeju National University · College of Pharmacy",
   "org_ko": "제주대학교 약학대학",
   "tagline": "Controlling bioavailability by design — from formulation technology to precision drug delivery",
@@ -10,7 +10,8 @@
   "tel": "064-754-2652",
   "addr": "제주특별자치도 제주시 제주대학로 102, 제주대학교 약학대학 1호관 316호",
   "scholar": "https://scholar.google.co.kr/citations?user=BTE-tboAAAAJ",
-  "orcid": "https://orcid.org/0000-0003-4951-3213"
+  "orcid": "https://orcid.org/0000-0003-4951-3213",
+  "short": "PC-BACL"
  },
  "pi": {
   "name_ko": "박철훈",
