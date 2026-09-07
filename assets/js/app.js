@@ -29,7 +29,7 @@ async function renderHighlights(sel){
 }
 async function renderNews(sel,limit){
   const ns=await J('data/news.json'); const b=$(sel); if(!b)return;
-  b.innerHTML=(limit?ns.slice(0,limit):ns).map(n=>`<div class="news"><div class="d">${n.date} · ${n.tag}</div>
+  b.innerHTML=(limit?ns.slice(0,limit):ns).map(n=>`<div class="news"><div class="d">${n.date}<span class="tg tg-${n.tag}">${n.tag}</span></div>
    <h4>${n.title}</h4><p>${n.body}</p></div>`).join('');
 }
 
@@ -66,15 +66,64 @@ async function renderAch(){
   const g=$('#grants'); if(g)g.innerHTML='<ol class="pubs">'+a.awards.map(x=>`<li>${x.replace(/\*\*/g,'')}</li>`).join('')+'</ol>';
 }
 document.addEventListener('DOMContentLoaded',navActive);
+const AGENCY={
+ mist :{ko:"과학기술정보통신부",  ab:"과기정통부", en:"MSIT · NRF"},
+ mfds :{ko:"식품의약품안전처",    ab:"식약처",     en:"MFDS · NIFDS"},
+ motie:{ko:"산업통상자원부",      ab:"산업부",     en:"MOTIE"},
+ mss  :{ko:"중소벤처기업부",      ab:"중기부",     en:"MSS · TIPA"},
+ add  :{ko:"국방과학연구소",      ab:"국방과학연구소", en:"ADD"},
+ corp :{ko:"기업 수탁",           ab:"기업",       en:"Industry"}};
+const ROLE={
+ lead:{ko:"연구책임자 (주관)",       en:"Principal Investigator"},
+ co  :{ko:"공동연구개발기관 책임",   en:"Co-PI (JNU)"},
+ part:{ko:"참여연구원",              en:"Participating researcher"}};
+
 async function renderProjects(sel){
   const ps=await J('data/projects.json'); const b=document.querySelector(sel); if(!b)return;
-  b.innerHTML=ps.map(p=>`<div class="card" style="margin-bottom:16px">
-   <span class="pill">${p.role}</span>
-   <h3>${p.name}</h3>
-   <p style="color:var(--ink)"><b>${p.agency}</b> · ${p.program}<br><span style="color:var(--muted)">${p.period}</span></p>
-   <p style="margin-top:10px;color:var(--ink)"><b>연구목표.</b> ${p.goal}</p>
-   <ul style="color:var(--muted);font-size:13px;margin:8px 0 0;padding-left:18px">${p.content.map(c=>`<li>${c}</li>`).join('')}</ul>
-  </div>`).join('');
+
+  const used=[...new Set(ps.map(p=>p.ag))];
+  const legend=`<div class="plegend">
+    <div class="pl-row"><span class="pl-h">부처 · Funding agency</span>${
+      used.map(a=>`<span class="ag-chip ag-${a}">${AGENCY[a].ab}<i>${AGENCY[a].en}</i></span>`).join('')}</div>
+    <div class="pl-row"><span class="pl-h">역할 · Role</span>
+      <span class="rl solid">책임 (주관·공동) </span>
+      <span class="rl">참여</span></div></div>`;
+
+  const filters=`<div class="pfilters" id="pfilt">
+    <button class="on" data-f="all">전체 <span>${ps.length}</span></button>
+    <button data-f="role:lead,co">책임과제 <span>${ps.filter(p=>p.role!=='part').length}</span></button>
+    ${used.map(a=>`<button data-f="ag:${a}" class="fb-${a}">${AGENCY[a].ab} <span>${ps.filter(p=>p.ag===a).length}</span></button>`).join('')}
+  </div>`;
+
+  const card=p=>`<article class="pcard2 ag-${p.ag}" data-ag="${p.ag}" data-role="${p.role}">
+    <div class="pc-bar"></div>
+    <div class="pc-body">
+      <div class="pc-tags">
+        <span class="ag-chip ag-${p.ag}">${AGENCY[p.ag].ab}</span>
+        <span class="rl ${p.role==='part'?'':'solid'} ag-${p.ag}">${p.roleLabel||ROLE[p.role].ko}</span>
+        <span class="kind">${p.kind}</span>
+        <span class="per">${p.period}</span>
+      </div>
+      <h3>${p.name}</h3>
+      <p class="pc-ag"><b>${p.agency}</b> · ${p.program}</p>
+      <p class="pc-goal"><b>연구목표.</b> ${p.goal}</p>
+      <ul class="pc-list">${p.content.map(c=>`<li>${c}</li>`).join('')}</ul>
+    </div></article>`;
+
+  b.innerHTML=legend+filters+`<div id="plist">${ps.map(card).join('')}</div>`;
+
+  const f=document.querySelector('#pfilt');
+  f.addEventListener('click',e=>{
+    const btn=e.target.closest('button'); if(!btn)return;
+    f.querySelectorAll('button').forEach(x=>x.classList.remove('on')); btn.classList.add('on');
+    const [k,v]=btn.dataset.f.split(':');
+    document.querySelectorAll('#plist .pcard2').forEach(el=>{
+      let show=true;
+      if(k==='ag')   show = el.dataset.ag===v;
+      if(k==='role') show = v.split(',').includes(el.dataset.role);
+      el.style.display = show?'':'none';
+    });
+  });
 }
 
 /* ---------------- Gallery ---------------- */
