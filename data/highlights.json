@@ -1,0 +1,50 @@
+[
+ {
+  "img": "images/ga/GA1.jpg",
+  "title": "Fattigation 알부민 나노입자의 지방산 사슬길이별 항암활성",
+  "venue": "J. Control. Release 324 (2020) 55–68",
+  "doi": "https://doi.org/10.1016/j.jconrel.2020.05.001",
+  "pillar": "DDS",
+  "credit": "© Elsevier"
+ },
+ {
+  "img": "images/ga/GA2.jpg",
+  "title": "장·단쇄 지방산 알부민 나노입자의 doxorubicin 표적전달",
+  "venue": "Int. J. Pharm. 564 (2019) 124–135",
+  "doi": "https://doi.org/10.1016/j.ijpharm.2019.04.038",
+  "pillar": "DDS",
+  "credit": "© Elsevier"
+ },
+ {
+  "img": "images/ga/GA3.jpg",
+  "title": "지방산 접합 백신항원의 자기조립 나노화·열안정성",
+  "venue": "Int. J. Pharm. 658 (2024) 124176",
+  "doi": "https://doi.org/10.1016/j.ijpharm.2024.124176",
+  "pillar": "DDS",
+  "credit": "© Elsevier"
+ },
+ {
+  "img": "images/ga/GA4.jpg",
+  "title": "아픽사반 1일 1회 방출조절정 · 생체이용률 조절",
+  "venue": "J. Drug Deliv. Sci. Technol. 119 (2026) 108135",
+  "doi": "https://doi.org/10.1016/j.jddst.2026.108135",
+  "pillar": "Formulation",
+  "credit": "© Elsevier"
+ },
+ {
+  "img": "images/ga/GA5.jpg",
+  "title": "Hot-melt extrusion 기반 환자중심 제제기술 (Review)",
+  "venue": "J. Pharm. Investig. 55 (2025) 333–350",
+  "doi": "https://doi.org/10.1007/s40005-024-00684-4",
+  "pillar": "Formulation",
+  "credit": "© Springer"
+ },
+ {
+  "img": "images/ga/GA6.jpg",
+  "title": "심바스타틴 고함량 제제: HME + SMEDDS",
+  "venue": "J. Pharm. Innov. 21 (2026) 590",
+  "doi": "https://doi.org/10.1007/s12247-026-10791-9",
+  "pillar": "Formulation",
+  "credit": "© Springer"
+ }
+]

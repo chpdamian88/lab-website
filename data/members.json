@@ -1,0 +1,63 @@
+{
+ "current": [
+  {
+   "name": "박철훈 (Chulhun Park)",
+   "role": "Principal Investigator · 조교수",
+   "topic": "Fattigation-platform · 생체이용률 조절",
+   "tag": "PI"
+  },
+  {
+   "name": "Samad Muhammad Abdus",
+   "role": "박사과정 (Ph.D. student)",
+   "topic": "경구 펩타이드 투과촉진 · 인공혈액(HBOC) 안정화",
+   "tag": "PhD"
+  },
+  {
+   "name": "강수진",
+   "role": "석사과정 2학기 · 기수장",
+   "topic": "Nilotinib 가용화·생체이용률 조절 · 복합제네릭",
+   "tag": "MS"
+  },
+  {
+   "name": "정바다",
+   "role": "석사과정 2학기",
+   "topic": "Dasatinib 가용화·생체이용률 조절 · 클린뷰티 리포좀",
+   "tag": "MS"
+  },
+  {
+   "name": "이연우",
+   "role": "석사과정 2학기 · TA",
+   "topic": "Cabozantinib 가용화·생체이용률 조절 · 천연물 기획",
+   "tag": "MS"
+  },
+  {
+   "name": "오철호",
+   "role": "학부연구생 (5학년)",
+   "topic": "Cannabinoids 리뷰 · Albumin 리뷰 · Complex generic LAI",
+   "tag": "UG"
+  },
+  {
+   "name": "김상민",
+   "role": "학부생",
+   "topic": "Albumin 스캐폴드 (AlbuCORE)",
+   "tag": "UG"
+  }
+ ],
+ "alumni": [
+  {
+   "name": "고은아",
+   "role": "석사 졸업",
+   "topic": "Olaparib 무정형 고체분산체"
+  },
+  {
+   "name": "허재훈",
+   "role": "석사 졸업",
+   "topic": "Nintedanib 고체분산체 (IPF)"
+  },
+  {
+   "name": "정영주",
+   "role": "석사 졸업",
+   "topic": "Sorafenib 제형·특허"
+  }
+ ]
+}

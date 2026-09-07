@@ -1,0 +1,37 @@
+{
+ "lab": {
+  "name_en": "Bioavailability Control Laboratory (BACL)",
+  "name_ko": "생체이용률조절연구실",
+  "org_en": "Jeju National University · College of Pharmacy",
+  "org_ko": "제주대학교 약학대학",
+  "tagline": "Controlling bioavailability by design — from formulation technology to precision drug delivery",
+  "tagline_ko": "제제기술에서 정밀 약물전달까지, 생체이용률을 설계로 조절합니다",
+  "email": "chpark@jejunu.ac.kr",
+  "tel": "064-754-2652",
+  "addr": "제주특별자치도 제주시 제주대학로 102, 제주대학교 약학대학 1호관 316호",
+  "scholar": "https://scholar.google.co.kr/citations?user=BTE-tboAAAAJ",
+  "orcid": "https://orcid.org/0000-0003-4951-3213"
+ },
+ "pi": {
+  "name_ko": "박철훈",
+  "name_en": "Chulhun Park, Ph.D.",
+  "title": "조교수 / Assistant Professor",
+  "role": "제주약학연구소 소장 · 신약연구개발지원센터",
+  "edu": [
+   "약학박사, 아주대학교 (2018)",
+   "약학사, 강원대학교 (2012)"
+  ],
+  "career": [
+   "제주대학교 약학대학 조교수 (2022.09~현재)",
+   "University of Alberta 박사후연구원 (2019~2022)",
+   "한국유나이티드제약㈜ 연구원 (2018~2019)"
+  ],
+  "interests": [
+   "Fattigation-platform 기술",
+   "가용화·안정화·나노화 제제",
+   "선택적 방출제어·고온용융압출(HME)",
+   "생체모사 미세유체 시스템",
+   "재조합 알부민 기반 정밀 나노전달"
+  ]
+ }
+}
