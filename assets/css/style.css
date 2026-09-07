@@ -8,8 +8,11 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
 header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
 backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
-.brand{display:flex;flex-direction:column;line-height:1.25}
-.brand b{font-size:17px;color:var(--navy);letter-spacing:.2px}
+.brand{display:flex;align-items:center;gap:11px;line-height:1.25}
+.brand:hover{text-decoration:none}
+.brand-mark{flex:0 0 auto;display:block}
+.brand-txt{display:flex;flex-direction:column}
+.brand b{font-size:18px;color:var(--navy);letter-spacing:.4px;font-weight:800}
 .brand span{font-size:11.5px;color:var(--muted)}
 .nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
 .nav ul a{color:var(--ink);font-size:13.5px;font-weight:600}
