@@ -2,62 +2,88 @@
  "current": [
   {
    "name": "박철훈 (Chulhun Park)",
-   "role": "Principal Investigator · 조교수 / 제주약학연구소 소장",
-   "topic": "Director, Jeju Research Institute of Pharmaceutical Sciences · Fattigation-platform · 생체이용률 조절",
-   "tag": "PI"
+   "role": "Principal Investigator · 부교수 / 제주약학연구소 소장",
+   "topic": "Associate Professor · Director, Jeju Research Institute of Pharmaceutical Sciences · Fattigation-platform · 생체이용률 조절",
+   "tag": "PI",
+   "photo": "images/people/park-chulhun.jpg"
   },
   {
    "name": "Samad Muhammad Abdus",
    "role": "박사과정 (Ph.D. student)",
    "topic": "경구 펩타이드 투과촉진 · 인공혈액(HBOC) 안정화",
-   "tag": "PhD"
+   "tag": "PhD",
+   "photo": "images/people/samad.jpg"
   },
   {
    "name": "강수진",
    "role": "석사과정 2학기 · 기수장",
    "topic": "Nilotinib 가용화·생체이용률 조절 · 복합제네릭",
-   "tag": "MS"
+   "tag": "MS",
+   "photo": "images/people/kang-sujin.jpg"
   },
   {
    "name": "정바다",
    "role": "석사과정 2학기",
    "topic": "Dasatinib 가용화·생체이용률 조절 · 클린뷰티 리포좀",
-   "tag": "MS"
+   "tag": "MS",
+   "photo": "images/people/jeong-bada.jpg"
   },
   {
    "name": "이연우",
    "role": "석사과정 2학기 · TA",
    "topic": "Cabozantinib 가용화·생체이용률 조절 · 천연물 기획",
-   "tag": "MS"
+   "tag": "MS",
+   "photo": "images/people/lee-yeonwoo.jpg"
   },
   {
    "name": "오철호",
    "role": "학부연구생 (5학년)",
    "topic": "Cannabinoids 리뷰 · Albumin 리뷰 · Complex generic LAI",
-   "tag": "UG"
-  },
-  {
-   "name": "김상민",
-   "role": "학부생",
-   "topic": "Albumin 스캐폴드 (AlbuCORE)",
-   "tag": "UG"
+   "tag": "UG",
+   "photo": "images/people/oh-cheolho.jpg"
   }
  ],
  "alumni": [
   {
    "name": "고은아",
-   "role": "석사 졸업",
-   "topic": "Olaparib 무정형 고체분산체"
+   "role": "석사 졸업 (2026)",
+   "topic": "Olaparib 무정형 고체분산체",
+   "photo": "images/people/ko-euna.jpg",
+   "now": "㈜한화제약",
+   "nowEn": "Hanwha Pharma Co., Ltd."
   },
   {
    "name": "허재훈",
-   "role": "석사 졸업",
-   "topic": "Nintedanib 고체분산체 (IPF)"
+   "role": "석사 졸업 (2026)",
+   "topic": "Nintedanib 고체분산체 (IPF)",
+   "photo": "images/people/heo-jaehoon.jpg",
+   "now": "㈜아이엠디팜",
+   "nowEn": "IMD Pharm Co., Ltd."
   },
   {
    "name": "정영주",
-   "role": "석사 졸업",
-   "topic": "Sorafenib 제형·특허"
+   "role": "석사 졸업 (2026)",
+   "topic": "Sorafenib 제형·특허",
+   "photo": "images/people/jeong-youngju.jpg",
+   "now": "㈜대원제약",
+   "nowEn": "Daewon Pharmaceutical Co., Ltd."
+  }
+ ],
+ "placements": [
+  {
+   "name": "㈜한화제약",
+   "nameEn": "Hanwha Pharma Co., Ltd.",
+   "logo": ""
+  },
+  {
+   "name": "㈜대원제약",
+   "nameEn": "Daewon Pharmaceutical Co., Ltd.",
+   "logo": ""
+  },
+  {
+   "name": "㈜아이엠디팜",
+   "nameEn": "IMD Pharm Co., Ltd.",
+   "logo": ""
   }
  ]
 }
