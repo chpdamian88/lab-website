@@ -1,0 +1,67 @@
+:root{--ink:#16202e;--muted:#5d6b7a;--line:#e3e8ef;--bg:#fff;--soft:#f5f8fc;
+--navy:#123a63;--brand:#1f6feb;--teal:#128b7e;--accent:#e8f4ec}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.65;
+font-family:-apple-system,"Segoe UI",Roboto,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-size:15px}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;line-height:1.25}
+.brand b{font-size:17px;color:var(--navy);letter-spacing:.2px}
+.brand span{font-size:11.5px;color:var(--muted)}
+.nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav ul a{color:var(--ink);font-size:13.5px;font-weight:600}
+.nav ul a.active{color:var(--brand)}
+.hero{background:linear-gradient(135deg,#0f2f52,#154b7a 55%,#116b63);color:#fff;padding:64px 0 56px}
+.hero h1{margin:0 0 10px;font-size:34px;letter-spacing:-.3px}
+.hero .ko{font-size:16px;opacity:.9;margin:0 0 6px}
+.hero p.lead{max-width:760px;opacity:.94;margin:14px 0 22px;font-size:15.5px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;font-weight:700;font-size:14px}
+.btn.primary{background:#fff;color:var(--navy)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff}
+section{padding:46px 0}
+h2.sec{font-size:20px;color:var(--navy);margin:0 0 6px}
+.sub{color:var(--muted);font-size:13.5px;margin:0 0 22px}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g3,.g2{grid-template-columns:1fr}.hero h1{font-size:26px}}
+.card{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff}
+.card h3{margin:0 0 8px;font-size:15.5px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:13.5px}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;
+background:#eef3fb;color:#28457f;margin-bottom:8px}
+.pill.dds{background:var(--accent);color:#1c6b4a}
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
+@media(max-width:620px){.stat{grid-template-columns:repeat(2,1fr)}}
+.stat div{border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+.stat b{display:block;font-size:26px;color:var(--navy)}
+.stat span{font-size:12px;color:var(--muted)}
+.ga{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.ga img{width:100%;aspect-ratio:16/10;object-fit:contain;background:#fff;border-bottom:1px solid var(--line)}
+.ga .b{padding:13px}
+.ga .b h4{margin:0 0 6px;font-size:13.5px;line-height:1.4}
+.ga .b .v{font-size:12px;color:var(--muted)}
+.ga .b .c{font-size:10.5px;color:#9aa6b5;margin-top:4px}
+ol.pubs{padding-left:0;list-style:none;margin:0}
+ol.pubs li{border-bottom:1px solid var(--line);padding:11px 0;font-size:13.5px}
+ol.pubs .n{display:inline-block;min-width:34px;font-weight:700;color:var(--navy)}
+.doi{display:inline-block;font-size:10.5px;font-weight:700;color:#fff;background:var(--brand);
+border-radius:4px;padding:1px 6px;margin-left:6px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.filters button{border:1px solid var(--line);background:#fff;border-radius:20px;padding:5px 13px;
+font-size:12.5px;cursor:pointer;font-weight:600;color:var(--muted)}
+.filters button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+th{background:var(--soft);color:var(--navy);font-size:12.5px}
+.news{border-left:3px solid var(--brand);padding:4px 0 4px 14px;margin-bottom:18px}
+.news .d{font-size:11.5px;color:var(--muted)}
+.news h4{margin:2px 0 4px;font-size:14.5px}
+.news p{margin:0;font-size:13px;color:var(--muted)}
+footer{background:var(--soft);border-top:1px solid var(--line);padding:30px 0;margin-top:30px;
+font-size:13px;color:var(--muted)}
+footer b{color:var(--ink)}
