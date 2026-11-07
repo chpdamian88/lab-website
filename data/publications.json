@@ -1,7 +1,13 @@
 [
  {
+  "n": 74,
+  "cite": "J.Y. Yun, H.D. Nguyen, N.H. Dinh, J.-B. Park, C. Park, J.H. Cui, Q.-R. Cao, B.-J. Lee, Effect of alginate types and calcium concentration on morphological properties and controlled drug release of alginate-decorated PLGA nanoparticles, Carbohydrate Polymer Technologies and Applications, 16 (2026) 101265",
+  "doi": "https://doi.org/10.1016/j.carpta.2026.101265",
+  "year": 2026
+ },
+ {
   "n": 73,
-  "cite": "I.-K. Hong, D.H. Nam, Y. Jeong, J.-B. Park, C. Park, B.-J. Lee, Design of immediate release combination preparation containing alkalizer and lansoprazole for mechanistic understanding of enhanced gastric stability, pharmacokinetics, and intragastric pH variability in healthy human subjects, International Journal of Pharmaceutics: X, 11 (2026) 100579",
+  "cite": "I.-K. Hong, D.H. Nam, Y. Jeong, J.-B. Park, C. Park**, B.-J. Lee, Design of immediate release combination preparation containing alkalizer and lansoprazole for mechanistic understanding of enhanced gastric stability, pharmacokinetics, and intragastric pH variability in healthy human subjects, International Journal of Pharmaceutics: X, 11 (2026) 100579",
   "doi": "https://doi.org/10.1016/j.ijpx.2026.100579",
   "year": 2026
  },
