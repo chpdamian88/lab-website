@@ -1,7 +1,50 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Research · PC-BACL</title>
-<link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png"><link rel="apple-touch-icon" href="images/logo/favicon-192.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><link rel="stylesheet" href="assets/css/style.css?v=4"></head><body>
+<link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png"><link rel="apple-touch-icon" href="images/logo/favicon-192.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><link rel="stylesheet" href="assets/css/style.css?v=4">
+<style>.ident{font-size:21px;font-weight:800;color:var(--navy);line-height:1.45;margin:4px 0 6px;letter-spacing:-.3px}
+.ident em{font-style:normal;color:var(--teal)}
+.flow{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:14px 10px 8px;margin:18px 0 10px;overflow-x:auto}
+.flow-svg{display:block;width:100%;min-width:760px;height:auto}
+.flow .fh{font-size:15px;font-weight:800;fill:var(--navy);text-anchor:middle}
+.flow .fs{font-size:11.5px;fill:var(--muted);text-anchor:middle}
+.flow .edge{fill:none;stroke:#b9c6d4;stroke-width:1.6;transition:stroke .15s,opacity .15s}
+.flow .node rect{fill:#fff;stroke:#cdd8e4;stroke-width:1.2;transition:all .15s}
+.flow .nt{font-size:13px;font-weight:700;fill:var(--ink);text-anchor:middle}
+.flow .ns{font-size:10.5px;fill:var(--muted);text-anchor:middle}
+.flow .qn rect{fill:var(--navy);stroke:var(--navy)}
+.flow .qnum{font-size:17px;font-weight:800;fill:#7fe0d2}
+.flow .qt{font-size:12.5px;font-weight:700;fill:#fff;text-anchor:middle}
+.flow a{cursor:pointer}
+.flow.hl .edge{opacity:.15}.flow.hl .node{opacity:.28}
+.flow.hl .edge.on{opacity:1;stroke:var(--teal);stroke-width:2.6}
+.flow.hl .node.on{opacity:1}.flow.hl .node.on rect{stroke:var(--teal);stroke-width:2}
+.flow-cap{font-size:12.5px;color:var(--muted);margin:0 0 26px}
+.dir{border:1px solid var(--line);border-left:5px solid var(--agc);border-radius:12px;padding:20px 22px;margin-bottom:20px;background:#fff;scroll-margin-top:80px}
+.dir-h{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.dnum{flex:none;width:38px;height:38px;border-radius:50%;background:var(--agbg);color:var(--agc);font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.den{font-size:11.5px;font-weight:700;color:var(--agc);letter-spacing:.02em}
+.dir h3{margin:2px 0 0;font-size:17.5px;color:var(--navy);line-height:1.4}
+.dbody{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:22px;align-items:start;margin-bottom:14px}
+.dir:nth-of-type(even) .dbody{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+.dir:nth-of-type(even) .dvis{order:2}
+.dvis{margin:0}
+.dvis .gmain img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+.dvis .schem{display:block;width:100%;height:auto}
+.dvis figcaption{font-size:11.5px;color:var(--muted);margin-top:6px}
+.dvis figcaption a{color:var(--muted)}
+.gthumbs{display:flex;gap:8px;margin-top:8px}
+.gthumbs a{flex:1;max-width:50%}
+.gthumbs img{display:block;width:100%;height:84px;object-fit:cover;border:1px solid var(--line);border-radius:8px}
+.dex{margin:0 0 10px;color:var(--ink);font-size:14.5px}
+.drs{margin:0;color:var(--ink);font-size:14px;background:var(--agbg);border-radius:10px;padding:12px 14px}
+.dmeta{display:grid;grid-template-columns:3fr 2fr;gap:18px;border-top:1px dashed var(--line);padding-top:12px}
+@media(max-width:760px){.dbody,.dir:nth-of-type(even) .dbody,.dmeta{grid-template-columns:1fr}.dir:nth-of-type(even) .dvis{order:0}.dir{padding:16px}.ident{font-size:18px}}
+.dmeta h4{margin:0 0 6px;font-size:12.5px;color:var(--muted)}
+.dmeta ul{margin:0;padding-left:16px;font-size:13px;color:var(--ink)}
+.dmeta li{margin-bottom:4px}
+.drefs a{color:var(--agc)}.drefs .rn{color:var(--muted);font-size:11.5px}
+</style></head><body>
 <header class="top"><div class="wrap nav">
 <a class="brand" href="index.html"><img class="brand-mark" src="images/logo/pcbacl-mark.svg" alt="" width="42" height="42"><span class="brand-txt"><b>PC-BACL</b><span class="bk">제주대학교 약학대학 환자중심형 생체이용률조절 연구실</span><span class="be">Patient-Centered Bioavailability Control Laboratory · Jeju National University</span></span></a>
 <ul>
@@ -10,42 +53,112 @@
 <li><a href="projects.html">Projects</a></li><li><a href="achievements.html">Achievements</a></li><li><a href="members.html">Members</a></li>
 <li><a href="news.html">News</a></li><li><a href="gallery.html">Gallery</a></li></ul></div></header>
 <section><div class="wrap">
-<h2 class="sec">Research <span class="kr">연구 분야</span></h2>
-<p class="sub">제제기술 + 약물전달시스템 — 생체이용률을 설계로 조절합니다</p>
-
-<div class="card" style="margin-bottom:18px"><span class="pill dds">Pillar 1 · Drug Delivery Systems</span>
-<h3>Fattigation-platform 기반 정밀 나노전달</h3>
-<p style="color:var(--ink)">지방산을 단백질·다당체에 접합해 자기조립 나노입자를 만드는 <b>Fattigation</b> 원천기술을 기반으로 합니다.
-지방산 사슬길이에 따라 약물 봉입률·안정성·항암활성이 달라지며, 유리지방산 수용체(FFAR1/3/4, CD36) 매개 흡수로
-종양 표적성을 높입니다. 최근에는 <b>재조합 인혈청알부민(rHSA) 구조체 라이브러리</b>로 확장하여
-난용성 키나아제 저해제(Nilotinib · Dasatinib · Cabozantinib 등)의 정밀 나노전달 플랫폼을 개발하고 있습니다.</p>
-<ul style="color:var(--muted);font-size:13.5px">
-<li>난용성 약물의 나노화·안정화 (fattigation 나노미셀)</li>
-<li>알부민–지방산 나노입자 기반 항암 약물전달</li>
-<li>FFAR 지향 테라그노시스</li>
-<li>생체모사 환경(미세유체·전단응력·단백질 코로나·종양 미세환경) 거동 연구</li></ul></div>
-
-<div class="card" style="margin-bottom:18px"><span class="pill">Pillar 2 · Formulation Technology</span>
-<h3>환자 중심 제제 설계와 생체이용률 조절</h3>
-<p style="color:var(--ink)">난용성·저투과성 약물의 가용화와 방출조절을 통해 복약 순응도와 개체 간 변동을 개선합니다.
-기능성 부형제(PEO·TPGS 등)의 다성분 시너지로 P-gp 저해와 서방출을 동시에 제어하고,
-고온용융압출(HME)·SMEDDS·고체분산체·나노결정 기술을 제형에 적용합니다.</p>
-<ul style="color:var(--muted);font-size:13.5px">
-<li>고체분산체·사이클로덱스트린 포접·공결정·나노결정 융합 가용화</li>
-<li>매트릭스 정제 설계 및 유동층 코팅·과립 제조</li>
-<li>기능성 부형제 기반 개체 간 변동 저감</li>
-<li>3D 프린팅 기반 오남용 억제 제형</li></ul></div>
-
-<div class="card"><span class="pill">Pillar 3 · Natural Products &amp; Regulatory Science</span>
-<h3>천연물 소재와 규제과학</h3>
-<p style="color:var(--ink)">제주 자생 천연물(대마·환각버섯 등) 추출·분석법 확립과 제형 개발, 복합제네릭·나노의약품의
-품질 및 동등성 평가 기반 마련, 마약류 안전관리 정책연구를 수행합니다.</p></div>
+<h2 class="sec">Research Directions <span class="kr">연구 방향</span></h2>
+<p class="ident">지방산 접합(<em>Fattigation</em>)과 제제기술로, 약이 몸에 닿는 양을 설계합니다.</p>
+<p class="sub">생체이용률이라는 하나의 목표를 다섯 가지 질문으로 풉니다.</p>
+<div class="flow"><svg viewBox="0 0 1000 445" class="flow-svg" role="img" aria-label="연구 흐름도: 약물에서 설계·평가를 거쳐 다섯 가지 연구 방향으로 이어지는 흐름">
+<text x="105.0" y="20" class="fh">약물</text><text x="105.0" y="38" class="fs">무엇을 전달하나</text>
+<text x="370.0" y="20" class="fh">설계</text><text x="370.0" y="38" class="fs">어떻게 담나</text>
+<text x="635.0" y="20" class="fh">평가</text><text x="635.0" y="38" class="fs">무엇으로 확인하나</text>
+<text x="895.0" y="20" class="fh">질문</text><text x="895.0" y="38" class="fs">다섯 가지 연구 방향</text>
+<path class="edge e1" d="M200,95.2 C237.5,95.2 237.5,104.5 275,104.5"/>
+<path class="edge e2" d="M200,169.60000000000002 C237.5,169.60000000000002 237.5,104.5 275,104.5"/>
+<path class="edge e3" d="M200,244.0 C237.5,244.0 237.5,197.5 275,197.5"/>
+<path class="edge e4" d="M200,318.40000000000003 C237.5,318.40000000000003 237.5,290.5 275,290.5"/>
+<path class="edge e5" d="M200,392.8 C237.5,392.8 237.5,290.5 275,290.5"/>
+<path class="edge e5" d="M200,392.8 C237.5,392.8 237.5,383.5 275,383.5"/>
+<path class="edge e1 e2" d="M465,104.5 C502.5,104.5 502.5,104.5 540,104.5"/>
+<path class="edge e1 e2" d="M465,104.5 C502.5,104.5 502.5,290.5 540,290.5"/>
+<path class="edge e2" d="M465,104.5 C502.5,104.5 502.5,197.5 540,197.5"/>
+<path class="edge e3" d="M465,197.5 C502.5,197.5 502.5,197.5 540,197.5"/>
+<path class="edge e3" d="M465,197.5 C502.5,197.5 502.5,290.5 540,290.5"/>
+<path class="edge e4" d="M465,290.5 C502.5,290.5 502.5,104.5 540,104.5"/>
+<path class="edge e4" d="M465,290.5 C502.5,290.5 502.5,197.5 540,197.5"/>
+<path class="edge e5" d="M465,290.5 C502.5,290.5 502.5,383.5 540,383.5"/>
+<path class="edge e5" d="M465,383.5 C502.5,383.5 502.5,383.5 540,383.5"/>
+<path class="edge e1" d="M730,104.5 C765.0,104.5 765.0,95.2 800,95.2"/>
+<path class="edge e1" d="M730,290.5 C765.0,290.5 765.0,95.2 800,95.2"/>
+<path class="edge e2" d="M730,104.5 C765.0,104.5 765.0,169.60000000000002 800,169.60000000000002"/>
+<path class="edge e2" d="M730,197.5 C765.0,197.5 765.0,169.60000000000002 800,169.60000000000002"/>
+<path class="edge e2" d="M730,290.5 C765.0,290.5 765.0,169.60000000000002 800,169.60000000000002"/>
+<path class="edge e3" d="M730,197.5 C765.0,197.5 765.0,244.0 800,244.0"/>
+<path class="edge e3" d="M730,290.5 C765.0,290.5 765.0,244.0 800,244.0"/>
+<path class="edge e4" d="M730,104.5 C765.0,104.5 765.0,318.40000000000003 800,318.40000000000003"/>
+<path class="edge e4" d="M730,197.5 C765.0,197.5 765.0,318.40000000000003 800,318.40000000000003"/>
+<path class="edge e5" d="M730,383.5 C765.0,383.5 765.0,392.8 800,392.8"/>
+<g class="node col-a n1"><rect x="10" y="70.2" width="190" height="50" rx="9"/><text x="105.0" y="91.2" class="nt">난용성 항암제</text><text x="105.0" y="109.2" class="ns">키나아제 저해제</text></g>
+<g class="node col-a n2"><rect x="10" y="144.60000000000002" width="190" height="50" rx="9"/><text x="105.0" y="165.60000000000002" class="nt">펩타이드 · 백신 항원</text><text x="105.0" y="183.60000000000002" class="ns">바이오의약품</text></g>
+<g class="node col-a n3"><rect x="10" y="219.0" width="190" height="50" rx="9"/><text x="105.0" y="240.0" class="nt">난용성 경구 약물</text><text x="105.0" y="258.0" class="ns">저용해·저투과</text></g>
+<g class="node col-a n4"><rect x="10" y="293.40000000000003" width="190" height="50" rx="9"/><text x="105.0" y="314.40000000000003" class="nt">천연물 활성성분</text><text x="105.0" y="332.40000000000003" class="ns">추출 · 분석</text></g>
+<g class="node col-a n5"><rect x="10" y="367.8" width="190" height="50" rx="9"/><text x="105.0" y="388.8" class="nt">복합제네릭</text><text x="105.0" y="406.8" class="ns">리포좀 · 장기지속형 주사제</text></g>
+<g class="node col-b n1 n2"><rect x="275" y="79.5" width="190" height="50" rx="9"/><text x="370.0" y="100.5" class="nt">Fattigation</text><text x="370.0" y="118.5" class="ns">지방산 접합 자기조립</text></g>
+<g class="node col-b n3"><rect x="275" y="172.5" width="190" height="50" rx="9"/><text x="370.0" y="193.5" class="nt">고체분산체 · HME</text><text x="370.0" y="211.5" class="ns">SMEDDS · 3D 프린팅</text></g>
+<g class="node col-b n4 n5"><rect x="275" y="265.5" width="190" height="50" rx="9"/><text x="370.0" y="286.5" class="nt">나노운반체</text><text x="370.0" y="304.5" class="ns">마이크로에멀젼 · 리포좀 · 포접체</text></g>
+<g class="node col-b n5"><rect x="275" y="358.5" width="190" height="50" rx="9"/><text x="370.0" y="379.5" class="nt">장기지속형 주사제</text><text x="370.0" y="397.5" class="ns">in situ 겔 · 임플란트</text></g>
+<g class="node col-c n1 n2 n4"><rect x="540" y="79.5" width="190" height="50" rx="9"/><text x="635.0" y="100.5" class="nt">물성 · 안정성</text><text x="635.0" y="118.5" class="ns">입자 · 결정형 · 열안정성</text></g>
+<g class="node col-c n2 n3 n4"><rect x="540" y="172.5" width="190" height="50" rx="9"/><text x="635.0" y="193.5" class="nt">용출 · 막투과</text><text x="635.0" y="211.5" class="ns">점막 · 경피 · 장관</text></g>
+<g class="node col-c n1 n2 n3"><rect x="540" y="265.5" width="190" height="50" rx="9"/><text x="635.0" y="286.5" class="nt">체내 평가</text><text x="635.0" y="304.5" class="ns">약동학 · 항암 · 면역원성</text></g>
+<g class="node col-c n5"><rect x="540" y="358.5" width="190" height="50" rx="9"/><text x="635.0" y="379.5" class="nt">품질특성 · 동등성</text><text x="635.0" y="397.5" class="ns">CQA · 품질평가법</text></g>
+<a href="#dir1"><g class="node qn n1" data-q="1"><rect x="800" y="70.2" width="190" height="50" rx="9"/><text x="816" y="101.2" class="qnum">①</text><text x="907.0" y="101.2" class="qt">정밀 나노전달</text></g></a>
+<a href="#dir2"><g class="node qn n2" data-q="2"><rect x="800" y="144.60000000000002" width="190" height="50" rx="9"/><text x="816" y="175.60000000000002" class="qnum">②</text><text x="907.0" y="175.60000000000002" class="qt">바이오의약품 안정화·경구화</text></g></a>
+<a href="#dir3"><g class="node qn n3" data-q="3"><rect x="800" y="219.0" width="190" height="50" rx="9"/><text x="816" y="250.0" class="qnum">③</text><text x="907.0" y="250.0" class="qt">환자 중심 경구제형</text></g></a>
+<a href="#dir4"><g class="node qn n4" data-q="4"><rect x="800" y="293.40000000000003" width="190" height="50" rx="9"/><text x="816" y="324.40000000000003" class="qnum">④</text><text x="907.0" y="324.40000000000003" class="qt">천연물 활성성분 전달</text></g></a>
+<a href="#dir5"><g class="node qn n5" data-q="5"><rect x="800" y="367.8" width="190" height="50" rx="9"/><text x="816" y="398.8" class="qnum">⑤</text><text x="907.0" y="398.8" class="qt">복합제네릭 동등성</text></g></a>
+</svg></div>
+<p class="flow-cap">약물의 문제(무엇을 전달하나)에서 출발해 설계와 평가를 거쳐 다섯 연구 방향으로 이어집니다. 오른쪽 질문에 마우스를 올리면 그 방향으로 이어지는 경로만 남고, 누르면 해당 설명으로 이동합니다. 그림을 누르면 크게 볼 수 있고, [ ] 숫자는 <a href="publications.html">Publications</a> 번호입니다.</p>
+<article class="dir ag-mist" id="dir1">
+<div class="dir-h"><span class="dnum">①</span><div><span class="den">Direction 1 · Precision Nanodelivery</span><h3>녹지 않는 항암제를 종양까지 정확히 보낼 수 있는가?</h3></div></div>
+<div class="dbody"><figure class="dvis"><a href="images/ga/GA1.jpg" target="_blank" rel="noopener" class="gmain"><img src="images/ga/GA1.jpg" alt="graphical abstract" loading="lazy"></a><figcaption>Graphical abstract · <a href="https://doi.org/10.1016/j.jconrel.2020.05.001" target="_blank" rel="noopener">J. Control. Release 324 (2020) 55–68 · © Elsevier</a></figcaption><div class=gthumbs><a href="images/ga/GA2.jpg" target="_blank" rel="noopener" title="Int. J. Pharm. 564 (2019) 124–135 · © Elsevier"><img src="images/ga/GA2.jpg" alt="graphical abstract" loading="lazy"></a></div></figure><div class="dtxt"><p class="dex">알부민은 혈액 속에서 지방산을 실어 나르는 단백질입니다. 알부민에 지방산을 접합하면 스스로 뭉쳐 나노입자가 되고, 그 안에 물에 녹지 않는 항암제를 담을 수 있습니다.</p><p class="drs">지방산 사슬길이에 따라 나노화 능력, 약물 봉입과 세포 전달, 대장암 이종이식 마우스에서의 항암활성이 달라진다는 것을 밝혔습니다 [19][25][26]. 이 원리를 <b>재조합 인혈청알부민(rHSA) 구조체 라이브러리</b>로 넓혀, 난용성 키나아제 저해제(Nilotinib·Dasatinib·Cabozantinib 등)에 맞는 주사제형의 조성과 제조공정을 예측하는 플랫폼을 만들고 있습니다.</p></div></div>
+<div class="dmeta"><div><h4>관련 논문</h4><ul class="drefs"><li><a href="https://doi.org/10.1016/j.jconrel.2020.05.001" target="_blank" rel="noopener"><b>Journal of Controlled Release</b> 2020</a> — 지방산 사슬길이와 알부민 나노입자의 대장암 항암활성 <span class="rn">[25]</span></li>
+<li><a href="https://doi.org/10.1016/j.ejpb.2020.05.011" target="_blank" rel="noopener"><b>Eur J Pharm Biopharm</b> 2020</a> — 알부민–지방산 나노미셀의 나노화 능력과 난용성 약물 세포 전달 <span class="rn">[26]</span></li>
+<li><a href="https://doi.org/10.1016/j.ijpharm.2019.04.038" target="_blank" rel="noopener"><b>Int J Pharm</b> 2019</a> — 단쇄·장쇄 지방산이 독소루비신 알부민 나노입자의 암 표적성에 미치는 영향 <span class="rn">[19]</span></li>
+<li><a href="https://doi.org/10.1007/s40005-024-00689-4" target="_blank" rel="noopener"><b>J Pharm Investig</b> 2025</a> — Fattigation 기술의 현재와 전망 (총설) <span class="rn">[58]</span></li></ul></div>
+<div><h4>관련 과제 · 지식재산</h4><ul class="dproj"><li>과학기술정보통신부·한국연구재단 우수연구-핵심연구(기본연구B) — 지방산 매개 미세개질 재조합 알부민 구조체 라이브러리 기반 난용성 키나아제 저해제 정밀 나노전달 플랫폼 개발 (2026.09–2031.08, 연구책임)</li></ul></div></div>
+</article>
+<article class="dir ag-motie" id="dir2">
+<div class="dir-h"><span class="dnum">②</span><div><span class="den">Direction 2 · Biologics Stabilization & Oral Delivery</span><h3>펩타이드·백신을 먹는 약으로, 더 오래 보관되게 만들 수 있는가?</h3></div></div>
+<div class="dbody"><figure class="dvis"><a href="images/ga/GA3.jpg" target="_blank" rel="noopener" class="gmain"><img src="images/ga/GA3.jpg" alt="graphical abstract" loading="lazy"></a><figcaption>Graphical abstract · <a href="https://doi.org/10.1016/j.ijpharm.2024.124176" target="_blank" rel="noopener">Int. J. Pharm. 658 (2024) 124176 · © Elsevier</a></figcaption></figure><div class="dtxt"><p class="dex">펩타이드와 단백질 항원은 소화관에서 쉽게 분해되고, 장 점막을 잘 통과하지 못하며, 열에도 약합니다. 지방산을 붙이면 스스로 나노구조를 이루어 안정성과 막 투과 특성이 달라집니다.</p><p class="drs">지방산 접합 류프로라이드는 자기조립 나노구조를 만들어 항암활성이 높아졌고 [48], 구강 점막 부착 정제로 설계해 점막 전달 가능성을 평가했습니다 [46]. 지방산 접합 백신 항원은 열 안정성이 높아졌고 [56], 마우스에서 면역원성이 더 강하고 오래 유지되었습니다 [60].</p></div></div>
+<div class="dmeta"><div><h4>관련 논문</h4><ul class="drefs"><li><a href="https://doi.org/10.2147/IJN.S401048" target="_blank" rel="noopener"><b>Int J Nanomedicine</b> 2023</a> — 자기조립 지방산 접합 류프로라이드의 물리화학·생물약제학적 조절과 항암활성 <span class="rn">[48]</span></li>
+<li><a href="https://doi.org/10.1016/j.ijpharm.2023.122963" target="_blank" rel="noopener"><b>Int J Pharm</b> 2023</a> — 류프로라이드와 지방산 접합체의 구강 점막 부착 정제 설계 <span class="rn">[46]</span></li>
+<li><a href="https://doi.org/10.1016/j.ijpharm.2024.124176" target="_blank" rel="noopener"><b>Int J Pharm</b> 2024</a> — 지방산 접합 백신 항원의 자기조립 나노화와 열 안정성 <span class="rn">[56]</span></li>
+<li><a href="https://doi.org/10.3390/vaccines13020168" target="_blank" rel="noopener"><b>Vaccines</b> 2025</a> — 열 안정화 지방산 접합 백신 항원의 마우스 면역원성 증강·지속 <span class="rn">[60]</span></li></ul></div>
+<div><h4>관련 과제 · 지식재산</h4><ul class="dproj"><li>산업통상자원부 소재부품기술개발사업 — 경구 펩타이드 흡수촉진 신규 소재 개발 및 제형화 (2024–2028, 공동기관)</li></ul></div></div>
+</article>
+<article class="dir ag-add" id="dir3">
+<div class="dir-h"><span class="dnum">③</span><div><span class="den">Direction 3 · Patient-Centric Oral Formulation</span><h3>잘 녹지 않는 약을, 환자가 먹기 편한 제형으로 만들 수 있는가?</h3></div></div>
+<div class="dbody"><figure class="dvis"><a href="images/ga/GA4.jpg" target="_blank" rel="noopener" class="gmain"><img src="images/ga/GA4.jpg" alt="graphical abstract" loading="lazy"></a><figcaption>Graphical abstract · <a href="https://doi.org/10.1016/j.jddst.2026.108135" target="_blank" rel="noopener">J. Drug Deliv. Sci. Technol. 119 (2026) 108135 · © Elsevier</a></figcaption><div class=gthumbs><a href="images/ga/GA5.jpg" target="_blank" rel="noopener" title="J. Pharm. Investig. 55 (2025) 333–350 · © Springer"><img src="images/ga/GA5.jpg" alt="graphical abstract" loading="lazy"></a><a href="images/ga/GA6.jpg" target="_blank" rel="noopener" title="J. Pharm. Innov. 21 (2026) 590 · © Springer"><img src="images/ga/GA6.jpg" alt="graphical abstract" loading="lazy"></a></div></figure><div class="dtxt"><p class="dex">약이 녹지 않으면 흡수되지 않습니다. 약을 녹이는 기술(고체분산체·고온용융압출·자가미세유화)과 먹기 쉬운 형태(구강용해필름·1일 1회 방출조절 정제)를 함께 설계합니다.</p><p class="drs">기능성 부형제로 아픽사반 1일 1회 방출조절정의 생체이용률을 조절했고 [65], 용해도를 높이면서 장 안에서 다시 석출되는 것을 막아 흡수를 늘렸습니다 [31]. 고분자전해질 고체분산체로 실데나필의 pH 비의존 방출을 구현했고 [52], 무정형 아리피프라졸 3D 프린팅 구강용해필름 [41]과 고약물함량 심바스타틴 HME–SMEDDS 제형 [71]을 개발했으며, 올라파립 무정형 고체분산체 특허를 출원했습니다.</p></div></div>
+<div class="dmeta"><div><h4>관련 논문</h4><ul class="drefs"><li><a href="https://doi.org/10.1016/j.jddst.2026.108135" target="_blank" rel="noopener"><b>J Drug Deliv Sci Technol</b> 2026</a> — 기능성 부형제를 이용한 아픽사반 1일 1회 방출조절정의 방출·생체이용률 조절 <span class="rn">[65]</span></li>
+<li><a href="https://doi.org/10.3390/ph14121255" target="_blank" rel="noopener"><b>Pharmaceuticals</b> 2021</a> — 용해도 향상과 석출 억제를 통한 난용성 약물 생체이용률 개선 <span class="rn">[31]</span></li>
+<li><a href="https://doi.org/10.1016/j.heliyon.2023.e23091" target="_blank" rel="noopener"><b>Heliyon</b> 2023</a> — 고분자전해질 고체분산체를 이용한 실데나필 pH 비의존 방출조절 <span class="rn">[52]</span></li>
+<li><a href="https://doi.org/10.3390/ph15070895" target="_blank" rel="noopener"><b>Pharmaceuticals</b> 2022</a> — 무정형 아리피프라졸 함유 환자 중심 3D 프린팅 구강용해필름 <span class="rn">[41]</span></li>
+<li><a href="https://doi.org/10.1007/s12247-026-10791-9" target="_blank" rel="noopener"><b>J Pharm Innov</b> 2026</a> — 고약물함량 심바스타틴 제형: 고온용융압출과 자가미세유화 <span class="rn">[71]</span></li>
+<li><a href="https://doi.org/10.1007/s40005-024-00684-9" target="_blank" rel="noopener"><b>J Pharm Investig</b> 2025</a> — 환자 미충족 수요와 품질을 위한 고온용융압출 기술 (총설) <span class="rn">[62]</span></li></ul></div>
+<div><h4>관련 과제 · 지식재산</h4><ul class="dproj"><li>특허 출원 — 올라파립의 무정형 고체분산체 및 이의 제조방법 (10-2025-0080148)</li></ul></div></div>
+</article>
+<article class="dir ag-mss" id="dir4">
+<div class="dir-h"><span class="dnum">④</span><div><span class="den">Direction 4 · Natural Product Actives Delivery</span><h3>천연물에서 추출한 약리활성성분을 효과적으로 전달할 수 있는가?</h3></div></div>
+<div class="dbody"><figure class="dvis"><svg viewBox="0 0 560 330" class="schem" role="img" aria-label="천연물 약리활성성분 전달 개요도"><defs><marker id="ah4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a9b8c8"/></marker></defs><rect x="0" y="0" width="560" height="330" rx="12" fill="#F2ECFB"/><rect x="18" y="26" width="120" height="70" rx="8" fill="#fff" stroke="#cdd8e4"/><path d="M36,73 C34,51 54,41 70,45 C70,63 56,77 36,73 z" fill="#d7efe0" stroke="#0E8C7F" stroke-width="1.4"/><path d="M38,71 L66,49" stroke="#0E8C7F" stroke-width="1.2"/><text x="98" y="57" text-anchor="middle" font-size="12" font-weight="700" fill="#123a63">천연물</text><text x="98" y="74" text-anchor="middle" font-size="10" fill="#5d6b7a">제주 자생 자원</text><rect x="18" y="128" width="120" height="56" rx="8" fill="#fff" stroke="#cdd8e4" stroke-width="1.2"/><text x="78.0" y="153.0" text-anchor="middle" font-size="12.5" font-weight="700" fill="#123a63">추출 · 분석</text><text x="78.0" y="169.0" text-anchor="middle" font-size="10.5" fill="#5d6b7a">분석법 확립</text><rect x="18" y="216" width="120" height="70" rx="8" fill="#fff" stroke="#7A4CC0" stroke-width="1.2"/><text x="78.0" y="248.0" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7A4CC0">약리활성성분</text><text x="78.0" y="264.0" text-anchor="middle" font-size="10.5" fill="#5d6b7a">난용성 · 불안정</text><path d="M78,96 L78,126" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><path d="M78,184 L78,214" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><rect x="232" y="22" width="150" height="56" rx="8" fill="#fff" stroke="#cdd8e4"/><circle cx="256" cy="50" r="13" fill="#fff" stroke="#7A4CC0" stroke-width="1.4"/><circle cx="251" cy="47" r="2.6" fill="#7A4CC0"/><circle cx="260" cy="45" r="2.6" fill="#7A4CC0"/><circle cx="256" cy="54" r="2.6" fill="#7A4CC0"/><circle cx="262" cy="53" r="2.6" fill="#7A4CC0"/><circle cx="250" cy="55" r="2.6" fill="#7A4CC0"/><text x="322" y="47" text-anchor="middle" font-size="12" font-weight="700" fill="#123a63">마이크로에멀젼</text><text x="322" y="63" text-anchor="middle" font-size="10" fill="#5d6b7a">[32]</text><path d="M138,251 C184.0,251 184.0,50 230,50" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><path d="M382,50 C400.0,50 400.0,165 418,165" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><rect x="232" y="92" width="150" height="56" rx="8" fill="#fff" stroke="#cdd8e4"/><path d="M244,109 L268,109 L263,132 L249,132 z" fill="#fff" stroke="#7A4CC0" stroke-width="1.4"/><circle cx="256" cy="120" r="3.5" fill="#7A4CC0"/><text x="322" y="117" text-anchor="middle" font-size="12" font-weight="700" fill="#123a63">CD 포접체</text><text x="322" y="133" text-anchor="middle" font-size="10" fill="#5d6b7a">[51]</text><path d="M138,251 C184.0,251 184.0,120 230,120" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><path d="M382,120 C400.0,120 400.0,165 418,165" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><rect x="232" y="162" width="150" height="56" rx="8" fill="#fff" stroke="#cdd8e4"/><rect x="241" y="181" width="30" height="5" fill="#7A4CC0" opacity=".35"/><rect x="241" y="187" width="30" height="6" fill="#fff" stroke="#7A4CC0"/><rect x="241" y="194" width="30" height="5" fill="#7A4CC0" opacity=".7"/><text x="322" y="187" text-anchor="middle" font-size="12" font-weight="700" fill="#123a63">경피 패치</text><text x="322" y="203" text-anchor="middle" font-size="10" fill="#5d6b7a">[54]</text><path d="M138,251 C184.0,251 184.0,190 230,190" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><path d="M382,190 C400.0,190 400.0,165 418,165" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><rect x="232" y="232" width="150" height="56" rx="8" fill="#fff" stroke="#cdd8e4"/><circle cx="256" cy="260" r="13" fill="#fff" stroke="#7A4CC0" stroke-width="2.4"/><circle cx="256" cy="260" r="8" fill="none" stroke="#7A4CC0" stroke-width="1.2" stroke-dasharray="2 2"/><text x="322" y="257" text-anchor="middle" font-size="12" font-weight="700" fill="#123a63">리포좀</text><text x="322" y="273" text-anchor="middle" font-size="10" fill="#5d6b7a">클린뷰티 과제</text><path d="M138,251 C184.0,251 184.0,260 230,260" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><path d="M382,260 C400.0,260 400.0,165 418,165" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah4)"/><rect x="420" y="110" width="124" height="110" rx="10" fill="#7A4CC0"/><text x="482" y="146" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">안정성 ↑</text><text x="482" y="168" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">용해도 ↑</text><text x="482" y="190" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">경피 · 체내 전달 ↑</text><text x="546" y="320" text-anchor="end" font-size="9.5" fill="#5d6b7a">개요도 · PC-BACL</text></svg><figcaption>개요도 · 관련 논문 아래 참조</figcaption></figure><div class="dtxt"><p class="dex">천연물에서 얻은 활성성분은 물에 잘 녹지 않고 빛·열·산소에 쉽게 변합니다. 추출·분석법을 세우고, 마이크로에멀젼·포접체·패치·리포좀에 담아 안정성과 흡수를 높입니다.</p><p class="drs">칸나비노이드를 마이크로에멀젼에 담아 안정성과 경피 전달을 개선했고 [32], 칸나비노이드산–사이클로덱스트린 포접체로 물리화학적·생물학적 성능을 높였으며 [51], Eudragit 매트릭스 패치로 경피 전달을 향상했습니다 [54]. 이 경험을 제주 자생 천연물로 넓히고 있습니다.</p></div></div>
+<div class="dmeta"><div><h4>관련 논문</h4><ul class="drefs"><li><a href="https://doi.org/10.1016/j.ijpharm.2021.120766" target="_blank" rel="noopener"><b>Int J Pharm</b> 2021</a> — 칸나비노이드 마이크로에멀젼의 안정성과 경피 전달 개선 <span class="rn">[32]</span></li>
+<li><a href="https://doi.org/10.3390/pharmaceutics15112533" target="_blank" rel="noopener"><b>Pharmaceutics</b> 2023</a> — 칸나비노이드산–사이클로덱스트린 포접체의 물성·생물학적 성능 개선 <span class="rn">[51]</span></li>
+<li><a href="https://doi.org/10.1016/j.jddst.2024.105697" target="_blank" rel="noopener"><b>J Drug Deliv Sci Technol</b> 2024</a> — Eudragit 매트릭스 칸나비노이드 패치의 경피 전달 향상 <span class="rn">[54]</span></li></ul></div>
+<div><h4>관련 과제 · 지식재산</h4><ul class="dproj"><li>중소벤처기업부 지역혁신선도기업육성 — 지방산 컨쥬게이션을 활용한 저자극 클린뷰티 리포좀 제형 설계 및 AI 기반 최적화 (2026–2028, 공동기관)</li>
+<li>식품의약품안전처·식품의약품안전평가원 — 천연물자원의 체계적 연구개발을 위한 기획연구 (2026.05–2026.11)</li></ul></div></div>
+</article>
+<article class="dir ag-mfds" id="dir5">
+<div class="dir-h"><span class="dnum">⑤</span><div><span class="den">Direction 5 · Regulatory Science</span><h3>규제기관과 함께, 복합제네릭의 동등성을 무엇으로 증명하는가?</h3></div></div>
+<div class="dbody"><figure class="dvis"><svg viewBox="0 0 560 330" class="schem" role="img" aria-label="복합제네릭 동등성 평가 개요도"><defs><marker id="ah5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a9b8c8"/></marker></defs><rect x="0" y="0" width="560" height="330" rx="12" fill="#E7F5F2"/><rect x="18" y="22" width="130" height="122" rx="10" fill="#fff" stroke="#cdd8e4"/><circle cx="83" cy="72" r="30" fill="#fff" stroke="#123a63" stroke-width="3"/><circle cx="83" cy="72" r="22" fill="none" stroke="#123a63" stroke-width="1.2"/><rect x="73" y="64" width="6" height="6" fill="#123a63" opacity=".75" transform="rotate(45 76 67)"/><rect x="86" y="63" width="6" height="6" fill="#123a63" opacity=".75" transform="rotate(45 89 66)"/><rect x="80" y="75" width="6" height="6" fill="#123a63" opacity=".75" transform="rotate(45 83 78)"/><rect x="88" y="74" width="6" height="6" fill="#123a63" opacity=".75" transform="rotate(45 91 77)"/><text x="83" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#123a63">원조의약품</text><text x="83" y="137" text-anchor="middle" font-size="10" fill="#5d6b7a">Reference</text><rect x="18" y="176" width="130" height="122" rx="10" fill="#fff" stroke="#cdd8e4"/><circle cx="83" cy="226" r="30" fill="#fff" stroke="#0E8C7F" stroke-width="3" stroke-dasharray="3 2"/><circle cx="83" cy="226" r="22" fill="none" stroke="#0E8C7F" stroke-width="1.2" stroke-dasharray="3 2"/><rect x="73" y="218" width="6" height="6" fill="#0E8C7F" opacity=".75" transform="rotate(45 76 221)"/><rect x="86" y="217" width="6" height="6" fill="#0E8C7F" opacity=".75" transform="rotate(45 89 220)"/><rect x="80" y="229" width="6" height="6" fill="#0E8C7F" opacity=".75" transform="rotate(45 83 232)"/><rect x="88" y="228" width="6" height="6" fill="#0E8C7F" opacity=".75" transform="rotate(45 91 231)"/><text x="83" y="276" text-anchor="middle" font-size="12" font-weight="700" fill="#0E8C7F">복합제네릭</text><text x="83" y="291" text-anchor="middle" font-size="10" fill="#5d6b7a">Test · 리포좀 · 장기지속형</text><rect x="196" y="22" width="178" height="276" rx="10" fill="#fff" stroke="#0E8C7F" stroke-width="1.4"/><text x="285" y="48" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0E8C7F">핵심품질특성(CQA) 비교</text><rect x="212" y="60" width="146" height="32" rx="6" fill="#E7F5F2"/><text x="285" y="81" text-anchor="middle" font-size="11.5" font-weight="600" fill="#123a63">입자 크기 · 분포</text><rect x="212" y="104" width="146" height="32" rx="6" fill="#E7F5F2"/><text x="285" y="125" text-anchor="middle" font-size="11.5" font-weight="600" fill="#123a63">지질 조성 · 막 구조</text><rect x="212" y="148" width="146" height="32" rx="6" fill="#E7F5F2"/><text x="285" y="169" text-anchor="middle" font-size="11.5" font-weight="600" fill="#123a63">봉입률 · 유리 약물</text><rect x="212" y="192" width="146" height="32" rx="6" fill="#E7F5F2"/><text x="285" y="213" text-anchor="middle" font-size="11.5" font-weight="600" fill="#123a63">in vitro 방출 거동</text><rect x="212" y="236" width="146" height="32" rx="6" fill="#E7F5F2"/><text x="285" y="257" text-anchor="middle" font-size="11.5" font-weight="600" fill="#123a63">물리화학적 안정성</text><path d="M148,83 C171.0,83 171.0,120 194,120" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah5)"/><path d="M148,237 C171.0,237 171.0,200 194,200" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah5)"/><rect x="414" y="70" width="130" height="64" rx="10" fill="#123a63"/><text x="479" y="98" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">동등성 판단</text><text x="479" y="116" text-anchor="middle" font-size="10" fill="#c9d6e6">품질 + 가상 생동성(VBE)</text><rect x="414" y="178" width="130" height="80" rx="10" fill="#fff" stroke="#0E8C7F" stroke-width="1.4"/><text x="479" y="204" text-anchor="middle" font-size="12" font-weight="700" fill="#0E8C7F">식약처 협력</text><text x="479" y="222" text-anchor="middle" font-size="10" fill="#5d6b7a">품질평가 정보집</text><text x="479" y="238" text-anchor="middle" font-size="10" fill="#5d6b7a">동등성 가이드라인(안)</text><path d="M374,160 C393.0,160 393.0,102 412,102" fill="none" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah5)"/><path d="M479,134 L479,176" stroke="#a9b8c8" stroke-width="1.6" marker-end="url(#ah5)"/><text x="546" y="320" text-anchor="end" font-size="9.5" fill="#5d6b7a">개요도 · PC-BACL</text></svg><figcaption>개요도 · 관련 논문 아래 참조</figcaption></figure><div class="dtxt"><p class="dex">리포좀 주사제나 장기지속형 주사제 같은 복합제네릭은 성분이 같아도 입자 크기·구조·방출 거동이 달라질 수 있어, 일반 생물학적동등성시험만으로는 동등성을 보이기 어렵습니다. 식품의약품안전처의 용역연구개발과제로 규제기관과 긴밀히 협력하며 품질평가 항목과 동등성 평가 기반을 만듭니다.</p><p class="drs">PEG화 리포좀 독소루비신을 사례로 나노입자 기반 핵심품질특성(CQA)을 규제 관점에서 정리했습니다 [69]. 장기지속형 주사제의 겔화 시간 조절 [29]과, 알부민–올레산 나노입자를 담은 PLGA in situ 임플란트의 이중 방출조절 [34]을 연구했습니다.</p></div></div>
+<div class="dmeta"><div><h4>관련 논문</h4><ul class="drefs"><li><a href="https://doi.org/10.1007/s40005-026-00807-4" target="_blank" rel="noopener"><b>J Pharm Investig</b> 2026</a> — 복합제네릭 개발에서 나노입자 기반 핵심품질특성: PEG화 리포좀 독소루비신 사례 <span class="rn">[69]</span></li>
+<li><a href="https://doi.org/10.1016/j.carbpol.2021.118453" target="_blank" rel="noopener"><b>Carbohydrate Polymers</b> 2021</a> — 장기지속형 알지네이트 in situ 겔 주사제의 겔화 시간 조절 <span class="rn">[29]</span></li>
+<li><a href="https://doi.org/10.2147/IJN.S302514" target="_blank" rel="noopener"><b>Int J Nanomedicine</b> 2021</a> — 알부민–올레산 나노입자 함유 PLGA in situ 임플란트의 팔리페리돈 팔미테이트 이중 방출조절 <span class="rn">[34]</span></li></ul></div>
+<div><h4>관련 과제 · 지식재산</h4><ul class="dproj"><li>식품의약품안전처·식품의약품안전평가원 용역연구개발과제 — 복합제네릭의약품에 대한 품질 및 동등성 평가 기술 기반 마련 연구 (2025.02–2028.11, 주관 조선대학교) · 품질평가 체계·항목 수립, 동등성 가이드라인(안), 가상 생물학적동등성(VBE) 평가</li></ul></div></div>
+</article>
 </div></section>
-
-<section style="background:var(--soft)"><div class="wrap">
-<h2 class="sec">Selected Research Highlights <span class="kr">대표 연구성과</span></h2>
-<p class="sub">각 논문의 graphical abstract · DOI 링크 · 출처 표기</p>
-<div class="grid g3" id="hl"></div></div></section>
 <footer><div class="wrap"><b>PC-BACL · 제주대학교 약학대학 환자중심형 생체이용률조절 연구실</b><br><span class="fen">Patient-Centered Bioavailability Control Laboratory, College of Pharmacy, Jeju National University</span><br><span class="fal">약칭 제주대학교 생체이용률조절 연구실 · JEJUNU Bioavailability Control Lab</span><br>제주약학연구소 신약연구개발지원센터<br><span class="fen">Jeju Research Institute of Pharmaceutical Sciences, Center for Drug Research &amp; Development Support</span><br>제주특별자치도 제주시 제주대학로 102, 약학대학 1호관 316호<br><span class="fen">Rm 316, Bldg 1, College of Pharmacy, 102 Jejudaehak-ro, Jeju-si, Jeju 63243, Republic of Korea</span><br>chpark@jejunu.ac.kr · 064-754-2652<br><a href="https://scholar.google.co.kr/citations?user=BTE-tboAAAAJ" target="_blank">Google Scholar</a> · <a href="https://orcid.org/0000-0003-4951-3213" target="_blank">ORCID 0000-0003-4951-3213</a></div></footer>
 <script src="assets/js/app.js?v=4"></script>
-<script>renderHighlights('#hl');</script></body></html>
+<script>
+(function(){var f=document.querySelector('.flow');if(!f)return;
+function on(q){f.classList.add('hl');f.querySelectorAll('.e'+q+',.n'+q).forEach(function(e){e.classList.add('on')});}
+function off(){f.classList.remove('hl');f.querySelectorAll('.on').forEach(function(e){e.classList.remove('on')});}
+f.querySelectorAll('.qn').forEach(function(g){var q=g.getAttribute('data-q');
+g.addEventListener('mouseenter',function(){on(q)});g.addEventListener('mouseleave',off);});})();
+</script></body></html>
