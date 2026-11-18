@@ -211,3 +211,13 @@ footer .fal{color:var(--muted);font-size:12px}
 .tg-Degree{background:#E8F3EC;color:#26714A;border-color:#C7E3D2}
 .tg-Seminar{background:#F1F5F9;color:#51606F;border-color:#E2E8F0}
 .tg-Recruit{background:#FFF1E6;color:#C2410C;border-color:#FED7AA}
+/* member level colors */
+.lv-PI{--lvc:#123a63;--lvbg:#123a63;--lvtx:#fff}
+.lv-PhD{--lvc:#7A4CC0;--lvbg:#F2ECFB;--lvtx:#7A4CC0}
+.lv-MS{--lvc:#0E8C7F;--lvbg:#E7F5F2;--lvtx:#0E6E64}
+.lv-UG{--lvc:#B9741A;--lvbg:#FBF2E4;--lvtx:#B9741A}
+.pcard .pill.lvp{background:var(--lvbg);color:var(--lvtx)}
+.pcard[class*="lv-"] .avatar{box-shadow:0 0 0 3px #fff,0 0 0 5px var(--lvc)}
+.pcard[class*="lv-"]{border-color:color-mix(in srgb,var(--lvc) 28%,var(--line))}
+.lvlegend{display:flex;flex-wrap:wrap;gap:8px;margin:-8px 0 18px}
+.lvlegend span{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:20px;background:var(--lvbg);color:var(--lvtx)}
