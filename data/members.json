@@ -60,20 +60,20 @@
    "nowEn": "Hanwha Pharma Co., Ltd."
   },
   {
-   "name": "허재훈",
-   "role": "석사 졸업 (2026)",
-   "topic": "Nintedanib 고체분산체 (IPF)",
-   "photo": "images/people/heo-jaehoon.jpg",
-   "now": "㈜아이엠디팜",
-   "nowEn": "IMD Pharm Co., Ltd."
-  },
-  {
    "name": "정영주",
    "role": "석사 졸업 (2026)",
    "topic": "Sorafenib 제형·특허",
    "photo": "images/people/jeong-youngju.jpg",
    "now": "㈜대원제약",
    "nowEn": "Daewon Pharmaceutical Co., Ltd."
+  },
+  {
+   "name": "허재훈",
+   "role": "석사 졸업 (2026)",
+   "topic": "Nintedanib 고체분산체 (IPF)",
+   "photo": "images/people/heo-jaehoon.jpg",
+   "now": "㈜아이엠디팜",
+   "nowEn": "IMD Pharm Co., Ltd."
   }
  ],
  "placements": [
