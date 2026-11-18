@@ -9,7 +9,7 @@
   },
   {
    "name": "Samad Muhammad Abdus",
-   "role": "박사과정 (Ph.D. student)",
+   "role": "박사과정",
    "topic": "경구 펩타이드 투과촉진 · 인공혈액(HBOC) 안정화",
    "tag": "PhD",
    "photo": "images/people/samad.jpg"
@@ -37,10 +37,17 @@
   },
   {
    "name": "오철호",
-   "role": "학부연구생 (5학년)",
-   "topic": "Cannabinoids 리뷰 · Albumin 리뷰 · Complex generic LAI",
+   "role": "학부연구생",
+   "topic": "제주대학교 약학대학 약학과 · Cannabinoids 리뷰 · Albumin 리뷰 · Complex generic LAI",
    "tag": "UG",
    "photo": "images/people/oh-cheolho.jpg"
+  },
+  {
+   "name": "박서연",
+   "role": "학부연구생",
+   "topic": "제주대학교 바이오메디컬정보학과",
+   "tag": "UG",
+   "photo": "images/people/park-seoyeon.jpg"
   }
  ],
  "alumni": [
