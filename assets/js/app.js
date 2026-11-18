@@ -47,7 +47,8 @@ function avatar(x,size){
 
 async function renderMembers(cur,alu,place){
   const m=await J('data/members.json');
-  if($(cur))$(cur).innerHTML=m.current.map(x=>`<div class="card pcard"><span class="pill">${x.tag}</span>
+  const LV={PI:'Principal Investigator',PhD:'Ph.D. course (Ph.D. Candidate)',MS:'Master course',UG:'Undergraduate student'};
+  if($(cur))$(cur).innerHTML=m.current.map(x=>`<div class="card pcard lv-${x.tag}"><span class="pill lvp">${LV[x.tag]||x.tag}</span>
    <div class="phead">${avatar(x,96)}<div class="pmeta"><h3>${x.name}</h3><b>${x.role}</b></div></div>
    <p>${x.topic}</p></div>`).join('');
   if($(alu))$(alu).innerHTML=m.alumni.map(x=>`<div class="card pcard alum">
